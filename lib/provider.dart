@@ -17,7 +17,7 @@ class KehadiranProvider extends ChangeNotifier {
 
   void toggleProvider(int index) {
     _dataMahasiswa[index]['presensi'] = !_dataMahasiswa[index]['presensi'];
-    notifyListeners(); // Pastikan notifyListeners dipanggil
+    notifyListeners();
   }
 
   void saveKehadiran() {

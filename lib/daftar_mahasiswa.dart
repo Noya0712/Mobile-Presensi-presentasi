@@ -7,7 +7,7 @@ class DaftarMahasiswa extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final provider = Provider.of<KehadiranProvider>(context); // Mengakses Provider
+    final provider = Provider.of<KehadiranProvider>(context); //Mengakses Provider
 
     return Scaffold(
       appBar: AppBar(title: const Text('Presensi Mahasiswa'),
