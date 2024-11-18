@@ -10,7 +10,8 @@ class DaftarPresensi extends StatelessWidget {
     final provider = Provider.of<KehadiranProvider>(context);
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Daftar Presensi')),
+      appBar: AppBar(title: const Text('Daftar Presensi'),
+      centerTitle: true,),
       body: provider.history.isEmpty
           ? const Center(child: Text('Belum Presensi'))
           : ListView.builder(

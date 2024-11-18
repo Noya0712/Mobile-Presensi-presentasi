@@ -10,7 +10,8 @@ class DaftarMahasiswa extends StatelessWidget {
     final provider = Provider.of<KehadiranProvider>(context); // Mengakses Provider
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Daftar Mahasiswa')),
+      appBar: AppBar(title: const Text('Presensi Mahasiswa'),
+      centerTitle: true),
       body: Column(
         children: [
           Expanded(
@@ -25,6 +26,13 @@ class DaftarMahasiswa extends StatelessWidget {
                 );
               },
             ),
+          ),
+
+          Padding(padding: const EdgeInsets.all(8.0),
+          child: ElevatedButton(
+              onPressed: provider.saveKehadiran,
+              child: const Text('simpan'),
+          ),
           ),
         ],
       ),

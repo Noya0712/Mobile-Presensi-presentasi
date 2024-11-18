@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Daftar Kehadiran',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: const DaftarMahasiswa(),
+      home: const MainScreen(),
     );
   }
 }
@@ -59,8 +59,8 @@ class _MainScreenState extends State<MainScreen> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.edit), label: 'Mahasiswa'),
-          BottomNavigationBarItem(icon: Icon(Icons.history), label: 'Presensi'),
+          BottomNavigationBarItem(icon: SizedBox.shrink(), label: 'Mahasiswa'),
+          BottomNavigationBarItem(icon: SizedBox.shrink(), label: 'Presensi'),
         ],
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
