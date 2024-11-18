@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:presensi_mobile/daftar_mahasiswa.dart';
 import 'package:presensi_mobile/daftar_presensi.dart';
 import 'package:presensi_mobile/provider.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(
-    MultiProviders(
-      provider: [
+    MultiProvider(
+      providers: [
         ChangeNotifierProvider(create: (_) => KehadiranProvider()),
       ],
       child: const MyApp(),
